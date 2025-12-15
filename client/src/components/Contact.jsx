@@ -46,20 +46,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@example.com',
-      href: 'mailto:hello@example.com',
+      value: 'sudhikumaran2005@gmail.com',
+      href: 'mailto:sudhikumaran2005@gmail.com',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Coimbatore, India',
       href: '#',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 8056355735',
+      href: 'tel:+918056355735',
     },
   ];
 

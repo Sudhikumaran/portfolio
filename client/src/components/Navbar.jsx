@@ -17,9 +17,9 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/Sudhikumaran', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/sudhi-kumaran-01373b295', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:sudhikumaran2005@gmail.com', label: 'Email' },
   ];
 
   useEffect(() => {
@@ -64,7 +64,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-2xl font-bold font-mono gradient-text">&lt;Dev/&gt;</span>
+            <span className="text-2xl font-bold font-mono gradient-text">CodeBySudhi</span>
             <motion.span
               className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-purple to-accent-pink group-hover:w-full transition-all duration-300"
             />

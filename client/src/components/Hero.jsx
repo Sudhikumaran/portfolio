@@ -86,8 +86,8 @@ const Hero = () => {
               variants={itemVariants}
               className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-white">Your </span>
-              <span className="gradient-text-animated">Name</span>
+              <span className="text-white">Sudhi </span>
+              <span className="gradient-text-animated">Kumaran</span>
             </motion.h1>
 
             {/* Animated Title */}
@@ -115,8 +115,8 @@ const Hero = () => {
               variants={itemVariants}
               className="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed"
             >
-              I craft exceptional digital experiences that blend creativity with cutting-edge technology. 
-              Passionate about building products that make a difference.
+              I build fast, scalable, and visually striking digital products. 
+              Turning complex ideas into clean, intuitive user experiences.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -139,6 +139,7 @@ const Hero = () => {
 
               <motion.a
                 href="/resume.pdf"
+                download="Sudhi_Kumaran_Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="group px-8 py-4 border-2 border-white/20 rounded-xl font-semibold text-white hover:border-accent-purple/50 hover:bg-accent-purple/10 transition-all flex items-center justify-center gap-2"
@@ -154,9 +155,9 @@ const Hero = () => {
               className="flex gap-8 mt-12 justify-center lg:justify-start"
             >
               {[
-                { number: '50+', label: 'Projects' },
-                { number: '30+', label: 'Happy Clients' },
-                { number: '5+', label: 'Years Experience' },
+                { number: '10+', label: 'Projects' },
+                { number: '1', label: 'Internship' },
+                { number: '2025', label: 'Graduate' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <p className="text-3xl font-bold gradient-text">{stat.number}</p>
@@ -199,7 +200,7 @@ const Hero = () => {
                     {'  '}
                     <span className="text-accent-emerald">name</span>
                     <span className="text-white">:</span>{' '}
-                    <span className="text-yellow-300">"Your Name"</span>
+                    <span className="text-yellow-300">"Sudhi Kumaran"</span>
                     <span className="text-white">,</span>
                     {'\n'}
                     {'  '}
@@ -216,7 +217,7 @@ const Hero = () => {
                     <span className="text-white">,</span>
                     {'\n'}
                     {'    '}
-                    <span className="text-yellow-300">"TypeScript"</span>
+                    <span className="text-yellow-300">"MongoDB"</span>
                     <span className="text-white">,</span>
                     {'\n'}
                     {'    '}
@@ -229,7 +230,7 @@ const Hero = () => {
                     {'  '}
                     <span className="text-accent-emerald">passion</span>
                     <span className="text-white">:</span>{' '}
-                    <span className="text-yellow-300">"Building amazing things"</span>
+                    <span className="text-yellow-300">"Building scalable products"</span>
                     <span className="text-white">,</span>
                     {'\n'}
                     {'  '}

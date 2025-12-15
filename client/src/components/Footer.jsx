@@ -5,10 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/Sudhikumaran', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/sudhi-kumaran-01373b295', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:sudhikumaran2005@gmail.com', label: 'Email' },
   ];
 
   const navLinks = [
@@ -38,11 +37,11 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               className="inline-block text-2xl font-bold font-mono gradient-text mb-4"
             >
-              &lt;Dev/&gt;
+              CodeBySudhi
             </motion.a>
             <p className="text-gray-400 text-sm leading-relaxed">
-              A passionate developer creating beautiful, functional, and 
-              user-friendly digital experiences.
+              Full-stack developer building fast, scalable, and 
+              visually striking digital products.
             </p>
           </div>
 
@@ -93,7 +92,7 @@ const Footer = () => {
           <p className="text-gray-500 text-sm flex items-center gap-1">
             © {currentYear} Made with 
             <Heart size={14} className="text-accent-pink fill-accent-pink" /> 
-            by Your Name
+            by Sudhi Kumaran
           </p>
 
           <motion.button

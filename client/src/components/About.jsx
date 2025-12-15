@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Code2, Rocket, Lightbulb, Heart, Coffee, Globe } from 'lucide-react';
+import { Code2, Rocket, Lightbulb, Heart, Coffee, Github } from 'lucide-react';
 
 const About = () => {
   const ref = useRef(null);
@@ -36,9 +36,9 @@ const About = () => {
   ];
 
   const funFacts = [
-    { icon: Coffee, value: '1000+', label: 'Cups of Coffee' },
-    { icon: Code2, value: '100k+', label: 'Lines of Code' },
-    { icon: Globe, value: '20+', label: 'Countries Reached' },
+    { icon: Coffee, value: '500+', label: 'Cups of Coffee' },
+    { icon: Code2, value: '50k+', label: 'Lines of Code' },
+    { icon: Github, value: '10+', label: 'GitHub Repos' },
   ];
 
   return (
@@ -71,12 +71,13 @@ const About = () => {
                 {/* Animated blob background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-purple via-accent-pink to-accent-cyan opacity-80 blob animate-morph" />
                 
-                {/* Profile image placeholder */}
-                <div className="absolute inset-4 rounded-3xl overflow-hidden bg-dark-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-8xl mb-4">👨‍💻</div>
-                    <p className="text-gray-400 text-sm font-mono">Your Photo Here</p>
-                  </div>
+                {/* Profile image */}
+                <div className="absolute inset-4 rounded-3xl overflow-hidden bg-dark-200">
+                  <img 
+                    src="/profile.jpg" 
+                    alt="Sudhi Kumaran"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Floating badges */}
@@ -85,7 +86,7 @@ const About = () => {
                   transition={{ duration: 3, repeat: Infinity }}
                   className="absolute -top-4 -right-4 glass px-4 py-2 rounded-xl"
                 >
-                  <span className="text-accent-purple font-bold">5+ Years</span>
+                  <span className="text-accent-purple font-bold">Full Stack</span>
                 </motion.div>
 
                 <motion.div
@@ -93,7 +94,7 @@ const About = () => {
                   transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
                   className="absolute -bottom-4 -left-4 glass px-4 py-2 rounded-xl"
                 >
-                  <span className="text-accent-pink font-bold">50+ Projects</span>
+                  <span className="text-accent-pink font-bold">2025 Intern</span>
                 </motion.div>
               </div>
             </motion.div>
@@ -101,20 +102,19 @@ const About = () => {
             {/* Right - Content */}
             <motion.div variants={itemVariants} className="space-y-6">
               <h3 className="text-2xl font-bold text-white">
-                A passionate developer crafting digital excellence
+                Building fast, scalable & visually striking digital products
               </h3>
 
               <p className="text-gray-400 leading-relaxed">
-                I'm a full-stack developer with a passion for creating beautiful, functional, 
-                and user-friendly websites and applications. With over 5 years of experience 
-                in the field, I've had the privilege of working with startups and established 
-                companies alike.
+                I'm a full-stack developer who builds fast, scalable, and visually striking 
+                digital products. I specialize in turning complex ideas into clean, intuitive 
+                user experiences using modern web technologies.
               </p>
 
               <p className="text-gray-400 leading-relaxed">
-                My journey in tech started with curiosity and has evolved into a career 
-                dedicated to pushing the boundaries of what's possible on the web. I believe 
-                in writing clean, maintainable code and creating experiences that users love.
+                I enjoy working across the stack — crafting pixel-perfect interfaces on the 
+                frontend and designing reliable, high-performance systems on the backend. 
+                My focus is always on real-world impact, performance, and polish.
               </p>
 
               {/* Highlights */}

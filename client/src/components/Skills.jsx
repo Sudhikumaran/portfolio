@@ -11,38 +11,28 @@ const Skills = () => {
     { id: 'frontend', name: 'Frontend' },
     { id: 'backend', name: 'Backend' },
     { id: 'tools', name: 'Tools' },
-    { id: 'design', name: 'Design' },
   ];
 
   const skills = [
     // Frontend
-    { name: 'React', category: 'frontend', level: 95, color: '#61DAFB' },
-    { name: 'Next.js', category: 'frontend', level: 90, color: '#ffffff' },
-    { name: 'TypeScript', category: 'frontend', level: 88, color: '#3178C6' },
-    { name: 'Tailwind CSS', category: 'frontend', level: 95, color: '#06B6D4' },
-    { name: 'Vue.js', category: 'frontend', level: 75, color: '#4FC08D' },
-    { name: 'JavaScript', category: 'frontend', level: 92, color: '#F7DF1E' },
+    { name: 'React', category: 'frontend', level: 90, color: '#61DAFB' },
+    { name: 'Tailwind CSS', category: 'frontend', level: 88, color: '#06B6D4' },
+    { name: 'JavaScript', category: 'frontend', level: 85, color: '#F7DF1E' },
 
     // Backend
-    { name: 'Node.js', category: 'backend', level: 90, color: '#339933' },
-    { name: 'Express', category: 'backend', level: 88, color: '#ffffff' },
-    { name: 'PostgreSQL', category: 'backend', level: 85, color: '#4169E1' },
+    { name: 'Node.js', category: 'backend', level: 85, color: '#339933' },
+    { name: 'Express', category: 'backend', level: 85, color: '#ffffff' },
     { name: 'MongoDB', category: 'backend', level: 82, color: '#47A248' },
-    { name: 'Python', category: 'backend', level: 78, color: '#3776AB' },
-    { name: 'GraphQL', category: 'backend', level: 80, color: '#E10098' },
+    { name: 'PostgreSQL', category: 'backend', level: 80, color: '#4169E1' },
+    { name: 'REST API', category: 'backend', level: 88, color: '#FF6B6B' },
+    { name: 'Python', category: 'backend', level: 75, color: '#3776AB' },
 
     // Tools
-    { name: 'Git', category: 'tools', level: 92, color: '#F05032' },
-    { name: 'Docker', category: 'tools', level: 80, color: '#2496ED' },
-    { name: 'AWS', category: 'tools', level: 75, color: '#FF9900' },
-    { name: 'Linux', category: 'tools', level: 78, color: '#FCC624' },
-    { name: 'VS Code', category: 'tools', level: 95, color: '#007ACC' },
-    { name: 'Vercel', category: 'tools', level: 88, color: '#ffffff' },
-
-    // Design
-    { name: 'Figma', category: 'design', level: 85, color: '#F24E1E' },
-    { name: 'UI/UX', category: 'design', level: 82, color: '#a855f7' },
-    { name: 'Framer', category: 'design', level: 75, color: '#0055FF' },
+    { name: 'Git', category: 'tools', level: 85, color: '#F05032' },
+    { name: 'GitHub', category: 'tools', level: 88, color: '#ffffff' },
+    { name: 'Postman', category: 'tools', level: 85, color: '#FF6C37' },
+    { name: 'AWS', category: 'tools', level: 70, color: '#FF9900' },
+    { name: 'VS Code', category: 'tools', level: 92, color: '#007ACC' },
   ];
 
   const filteredSkills = activeCategory === 'all' 
