@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: portfolio-api
+    runtime: node
+    region: oregon
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000

@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Send, Mail, MapPin, Phone, CheckCircle, Loader2 } from 'lucide-react';
+import { api } from '../utils/api';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -18,13 +19,7 @@ const Contact = () => {
     setStatus('loading');
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await api.contact(formData);
 
       if (response.ok) {
         setStatus('success');
