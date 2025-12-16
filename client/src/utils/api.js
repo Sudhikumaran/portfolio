@@ -1,5 +1,6 @@
 // API base URL - uses environment variable in production, empty string (proxy) in development
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+// Remove trailing slash to prevent double slashes in URLs
+const API_BASE_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
 export const api = {
   contact: async (formData) => {

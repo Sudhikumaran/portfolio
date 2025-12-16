@@ -13,7 +13,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:5173',
-    'https://portfolio-gold-ten-35.vercel.app'
+    'https://portfolio-gold-ten-35.vercel.app',
+    'https://codebysudhi.vercel.app'
   ],
   credentials: true
 }));
@@ -194,21 +195,6 @@ app.get('/api/messages', async (req, res) => {
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
-
-// Serve static files in production
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-}
 
 // Start server
 app.listen(PORT, () => {
