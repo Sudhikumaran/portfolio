@@ -157,7 +157,7 @@ const Hero = () => {
               {[
                 { number: '10+', label: 'Projects' },
                 { number: '1', label: 'Internship' },
-                { number: '2025', label: 'Graduate' },
+                { number: '2026', label: 'Graduate' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <p className="text-3xl font-bold gradient-text">{stat.number}</p>
