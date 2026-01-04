@@ -87,17 +87,16 @@ const Experience = () => {
             >
               {/* Timeline line */}
               <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-accent-purple via-accent-pink to-transparent md:-translate-x-1/2" />
-              
+
               {/* Timeline dot */}
               <motion.div
                 initial={{ scale: 0 }}
                 animate={isInView ? { scale: 1 } : {}}
                 transition={{ delay: index * 0.2 + 0.3 }}
-                className={`absolute left-0 md:left-1/2 top-0 w-4 h-4 rounded-full -translate-x-1/2 border-4 ${
-                  exp.current 
-                    ? 'bg-accent-emerald border-accent-emerald/30 animate-pulse' 
+                className={`absolute left-0 md:left-1/2 top-0 w-4 h-4 rounded-full -translate-x-1/2 border-4 ${exp.current
+                    ? 'bg-accent-emerald border-accent-emerald/30 animate-pulse'
                     : 'bg-dark-400 border-accent-purple/30'
-                }`}
+                  }`}
               />
 
               {/* Content */}
@@ -171,7 +170,7 @@ const Experience = () => {
           className="text-center mt-16"
         >
           <motion.a
-            href="/resume.pdf"
+            href="/resume.pdf?v=2026"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-purple to-accent-pink rounded-xl font-semibold text-white shadow-lg shadow-accent-purple/25"

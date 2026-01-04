@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-purple/30 rounded-full blur-[120px] animate-pulse-slow" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-pink/20 rounded-full blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-cyan/10 rounded-full blur-[150px]" />
-        
+
         {/* Grid pattern */}
         <div className="absolute inset-0 grid-pattern opacity-50" />
       </div>
@@ -115,7 +115,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed"
             >
-              I build fast, scalable, and visually striking digital products. 
+              I build fast, scalable, and visually striking digital products.
               Turning complex ideas into clean, intuitive user experiences.
             </motion.p>
 
@@ -138,8 +138,8 @@ const Hero = () => {
               </motion.a>
 
               <motion.a
-                href="/resume.pdf"
-                download="Sudhi_Kumaran_Resume.pdf"
+                href="/resume.pdf?v=2026"
+                download="Sudhi_Kumaran_Resume_2026.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="group px-8 py-4 border-2 border-white/20 rounded-xl font-semibold text-white hover:border-accent-purple/50 hover:bg-accent-purple/10 transition-all flex items-center justify-center gap-2"
@@ -179,7 +179,7 @@ const Hero = () => {
               {/* Decorative elements */}
               <div className="absolute -top-10 -left-10 w-32 h-32 bg-accent-purple/20 rounded-full blur-2xl" />
               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-accent-pink/20 rounded-full blur-2xl" />
-              
+
               {/* Code block */}
               <div className="relative code-block p-6 rounded-2xl overflow-hidden">
                 {/* Window controls */}
