@@ -90,6 +90,19 @@ const Projects = () => {
       stars: 4,
       forks: 1,
     },
+    {
+      id: 7,
+      title: 'Placement Flow',
+      description: 'Comprehensive placement management system to streamline recruitment processes and track student placements.',
+      image: '/placement-flow.png',
+      tags: ['React', 'FastAPI', 'Python', 'MongoDB'],
+      category: 'fullstack',
+      liveUrl: 'https://vercel.com/sudhikumarans-projects/placement-flow',
+      githubUrl: 'https://github.com/Sudhikumaran/placement-flow',
+      featured: true,
+      stars: 7,
+      forks: 2,
+    },
   ];
 
   const filteredProjects = activeFilter === 'all' 
