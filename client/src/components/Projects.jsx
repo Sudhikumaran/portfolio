@@ -27,6 +27,19 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: 'Placement Flow',
+      description: 'Comprehensive placement management system to streamline recruitment processes and track student placements.',
+      image: '/placement-flow.png',
+      tags: ['React', 'FastAPI', 'Python', 'MongoDB'],
+      category: 'fullstack',
+      liveUrl: 'https://vercel.com/sudhikumarans-projects/placement-flow',
+      githubUrl: 'https://github.com/Sudhikumaran/placement-flow',
+      featured: true,
+      stars: 7,
+      forks: 2,
+    },
+    {
+      id: 3,
       title: 'Quick Stay',
       description: 'Hotel booking application with real-time availability, secure authentication, fast search & filters.',
       image: '/quick-stay.png',
@@ -39,7 +52,7 @@ const Projects = () => {
       forks: 3,
     },
     {
-      id: 3,
+      id: 4,
       title: 'Protena AI',
       description: 'AI-powered application built with modern web technologies for intelligent solutions.',
       image: '/protena-ai.png',
@@ -52,7 +65,7 @@ const Projects = () => {
       forks: 2,
     },
     {
-      id: 4,
+      id: 5,
       title: 'HRMS Application',
       description: 'Human Resource Management System for managing employees, attendance, and payroll efficiently.',
       image: '/hrms-app.png',
@@ -65,7 +78,7 @@ const Projects = () => {
       forks: 3,
     },
     {
-      id: 5,
+      id: 6,
       title: 'Sales Management',
       description: 'Complete sales management solution for tracking orders, inventory, and customer data.',
       image: '/sales-management.png',
@@ -78,7 +91,7 @@ const Projects = () => {
       forks: 2,
     },
     {
-      id: 6,
+      id: 7,
       title: 'Problem Solving',
       description: 'Collection of DSA problems and solutions in Python for coding practice and interviews.',
       image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800',
@@ -89,19 +102,6 @@ const Projects = () => {
       featured: false,
       stars: 4,
       forks: 1,
-    },
-    {
-      id: 7,
-      title: 'Placement Flow',
-      description: 'Comprehensive placement management system to streamline recruitment processes and track student placements.',
-      image: '/placement-flow.png',
-      tags: ['React', 'FastAPI', 'Python', 'MongoDB'],
-      category: 'fullstack',
-      liveUrl: 'https://vercel.com/sudhikumarans-projects/placement-flow',
-      githubUrl: 'https://github.com/Sudhikumaran/placement-flow',
-      featured: true,
-      stars: 7,
-      forks: 2,
     },
   ];
 
